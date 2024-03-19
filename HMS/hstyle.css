@@ -1,0 +1,151 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.banner{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+
+}
+.slider{
+    width: 100%;
+    position: absolute;
+    height: 100vh;
+} 
+#img{
+    padding-left: 35vh;
+    height: 100%;
+    width: 60%;
+}
+.overlay{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7));
+    position: absolute;
+    top: 0;
+}
+.css-typing{
+    width: fit-content;
+    margin: 250px auto 0;
+    text-align: center;
+    color: #fff;
+}
+.css-typing h1{
+    font-size: 60px;
+    margin: 20px auto 100px;
+    font-weight: 100;
+    line-height: 25px;
+    
+}
+
+.css-typing p {
+    font-size: 20px;
+    white-space: nowrap;
+    overflow: hidden;
+    margin: 0;
+  }
+  
+  
+  
+  .css-typing p:nth-child(2) {
+    width: 44em;
+    opacity: 0;
+    animation: type3 4s steps(35, end), blink .5s step-end infinite alternate;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+  }
+  
+  
+  .css-typing p:nth-child(3) {
+    width: 50em;
+    opacity: 0;
+    animation: type4 7s steps(40, end), blink .5s step-end infinite alternate;
+    animation-delay: 5s;
+    animation-fill-mode: forwards;
+  }
+  
+  @keyframes type3 {
+    0% {
+      width: 0;
+    }
+    1% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes type4 {
+    0% {
+      width: 0;
+    }
+    1% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes blink {
+    50% {
+      border-color: transparent;
+    }
+  }
+
+  @media screen and (max-width: 576px) {
+    .css-typing h1 {
+        font-size: 6vw;
+    }
+
+    .css-typing p {
+        font-size: 3vw;
+    }
+
+    .css-typing p:nth-child(2),
+    .css-typing p:nth-child(3) {
+        width: 80%;
+        max-width: 400px;
+    }
+}
+
+/* Medium screens */
+@media screen and (min-width: 577px) and (max-width: 768px) {
+    .css-typing h1 {
+        font-size: 4.5vw;
+    }
+
+    .css-typing p {
+        font-size: 2.5vw;
+    }
+
+    .css-typing p:nth-child(2),
+    .css-typing p:nth-child(3) {
+        width: 80%;
+        max-width: 500px;
+    }
+}
+
+/* Large screens */
+@media screen and (min-width: 769px) and (max-width: 992px) {
+    .css-typing h1 {
+        font-size: 6vw;
+    }
+
+    .css-typing p {
+        font-size: 3vw;
+    }
+
+    .css-typing p:nth-child(2),
+    .css-typing p:nth-child(3) {
+        width: 80%;
+        max-width: 400px;
+    }
+}
